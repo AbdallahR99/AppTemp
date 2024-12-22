@@ -1,0 +1,46 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net9.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <RootNamespace>AppTemp.ApiService</RootNamespace>
+    <AssemblyName>AppTemp.ApiService</AssemblyName>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ContainerRepository>webapi</ContainerRepository>
+    <PublishProfile>DefaultContainer</PublishProfile>
+  </PropertyGroup>
+  <ItemGroup>
+
+    <ProjectReference Include="..\AppTemp.Core\AppTemp.Core.csproj" />
+
+    <ProjectReference Include="..\AppTemp.Infrastructure\AppTemp.Infrastructure.csproj" />
+
+    <ProjectReference Include="..\AppTemp.MSSQL\AppTemp.MSSQL.csproj" />
+
+    <ProjectReference Include="..\AppTemp.ServiceDefaults\AppTemp.ServiceDefaults.csproj" />
+
+    <ProjectReference Include="..\Modules\Catalog\Catalog.Infrastructure\Catalog.Infrastructure.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="9.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="assets\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Update="appsettings.Development.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Update="appsettings.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <None Update="assets\defaults\*">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
+</Project>

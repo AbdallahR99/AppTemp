@@ -1,0 +1,14 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <!--<RootNamespace>AppTemp.MSSQL</RootNamespace>
+    <AssemblyName> AppTemp.MSSQL</AssemblyName>-->
+    <AssemblyName>AppTemp.Migrations.MSSQL</AssemblyName>
+    <RootNamespace>AppTemp.Migrations.MSSQL</RootNamespace>
+    <TargetFramework>net9.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  
+</PropertyGroup>
+
+</Project>
